@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS styles
+    <title>CSS Selectors
     </title>
     <style>
-        
+        /* ELEMENT SELECTOR */
+        div {
+            background-color: rebeccapurple;
+            color: white;
+        }
+        /* CLASS SELECTOR */
+        .another{
+            color: red;
+        }
+        /* ID SELECTOR */
+        #another1{
+            background-color: red;
+            color: blueviolet;
+        }
+        /* CHILD SELECTOR */
+        #another1 > p {
+            color: black;
+        }
 
     </style>
 </head>
 <body>
     <div>I AM A SIMPLE DIV</div>
+    <div class="another">I AM ANOTHER DIV</div>
+    <div id="another1">I AM ANOTHER DIV
+
+        <p>THIS IS A PARAGRAPH CHILD OF ANOTHER1 DIV</p>
+        <span>THIS IS A ANOTHER PARAGRAPH CHILD OF ANOTHER1 DIV</span>
+        
+    </div>
+
 </body>
 </html>
