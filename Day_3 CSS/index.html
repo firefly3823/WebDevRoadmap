@@ -9,7 +9,7 @@
         /* ELEMENT SELECTOR */
         div {
             background-color: rebeccapurple;
-            color: white;
+            color:pink
         }
         /* CLASS SELECTOR */
         .another{
@@ -21,9 +21,44 @@
             color: blueviolet;
         }
         /* CHILD SELECTOR */
-        #another1 > p {
-            color: black;
+        div > span {
+            color: white;
         }
+        /* Descendant Selectors */
+        div  span {
+            color: lightseagreen;
+        }
+        /* UNIVERSAL SELECTOR */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* PSUDO SELECTOR */
+        a:visited{
+            color: green;
+        }
+        a:link{
+            color: red;
+        }
+        a:active{
+            background-color: blueviolet;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        div:first-child{
+            color: blue;
+        }
+        .container::before{
+            content: "BEFOR HEADING";
+            color: RED;
+        }
+        .container::after{
+            color: white;
+            content: "AFTER HEADING";
+        }
+        
 
     </style>
 </head>
@@ -34,7 +69,15 @@
 
         <p>THIS IS A PARAGRAPH CHILD OF ANOTHER1 DIV</p>
         <span>THIS IS A ANOTHER PARAGRAPH CHILD OF ANOTHER1 DIV</span>
+        <span>THIS IS A ANOTHER PARAGRAPH CHILD OF ANOTHER1 DIV</span>
         
+    </div>
+    <a href="http://www.google.com">Google</a>
+    <a href="http://www.google2.com">Google2</a>
+
+    <div class="container">
+        <h1 class="heading">this is a heading</h1>
+
     </div>
 
 </body>
