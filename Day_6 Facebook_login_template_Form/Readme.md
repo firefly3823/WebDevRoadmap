@@ -1,4 +1,3 @@
-```sh
 # Facebook Login Template
 
 This is a simple Facebook login template created using only an HTML form.
@@ -14,4 +13,3 @@ This is a simple Facebook login template created using only an HTML form.
 
 ## Requirements
 - A web browser to view the form
-```
